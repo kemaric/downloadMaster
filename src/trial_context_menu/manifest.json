@@ -1,0 +1,10 @@
+{
+  "name": "Downloads Trial 1",
+  "description": "Attempts to Download any item to Desktop",
+  "version": "0.6",
+  "permissions": ["contextMenus","downloads"],
+  "background": {
+    "scripts": ["my_background.js"]
+  }, 
+  "manifest_version": 2
+}
