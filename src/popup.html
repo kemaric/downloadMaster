@@ -5,25 +5,23 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/popup.js"></script>
-    <!--
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/js/bootstrap.js" rel="stylesheet"> -->
+    <link href="bootstrap/js/bootstrap.js" rel="stylesheet">
 
   </head>
     <body>
     <div id="container">
-        <h1>THIS IS UGLY</h1>
+        <h1><span class="firstWord">Sky</span>Load</h1>
         <form name="input" action="html_form_action.asp" method="get" id="forms">
           <input type="text" name="url" placeholder="url" id="urlBox">
           <input type="text" name="folder" placeholder="folder" id="folderBox">
-          <input type="button" value="Add" id="addUrl">
-          
-          <input id="signInButton" type="button" value="Sync with Drive">
+          <input type="button" value="Add" id="addUrl" class="btn-primary">
+		      <section>
+            <ul id="edit" contenteditable="true">
+            </ul>
+          </section>
+            <input id="signInButton" type="button" value="Sync with SkyDrive" class="btn-primary ">
         </form>
-		<section>
-    <ul id="edit" contenteditable="true">
-    </ul>
-  </section>
     </div>
     
   </body>

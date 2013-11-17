@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   load();
-  //chrome.storage.local.set({'results':[]});
+  //clearLocal();
 
   $("#addUrl").click(function(){
 
@@ -11,38 +11,19 @@ $(document).ready(function(){
       alert("Must fill out website and folder name");
       return false;
     }
-    $('input[type="text"]').prop("disabled", true);
 
     var inputUrl = document.createElement("input");
     inputUrl.type = "text";
     inputUrl.placeholder = "url";
 
     var inputfolder = document.createElement("input");
-	$("#edit").append("<li>" + x + " -> " + y + "</li>");
-	localStorage.setItem('list', edit.innerHTML);
-   // save(x,y);
-   $('input[type="text"]').prop("disabled", false);
-   $('input[type="text"]').val('');
+    $("#edit").append("<li style='display:inline'>" + x + " -> " + y + "</li>");
+    $("#edit").append('<input type="button" value="X" class="deleteUrl btn-danger">');
+  	localStorage.setItem('list', edit.innerHTML);
+    $('input[type="text"]').prop("disabled", false);
+    $('input[type="text"]').val('');
 
   });
-
-
-/*  function getResults(newsId){
-    chrome.storage.get('results', function(item){
-      item.results.forEach(function(v,i,a){
-        if(v.newsId == newsId){
-          // here v.resultsArray is the array we stored
-          // we can remove any part of it such as
-          v.resultsArray.splice(0,1);
-          // or
-          a.splice(i,1);
-          // to remove the whole object, then simply set it again
-          chrome.storage.local.set({'results':a});
-        }
-      });
-    });
-  }*/
-
 
   function load() {
  		// when the page loads
@@ -51,9 +32,21 @@ $(document).ready(function(){
 	  }
   }
 
-$("#signInButton").click(function(){
-		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-		po.src = 'https://apis.google.com/js/client:plusone.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	  });  
+  function clearLocal() {
+    clear: localStorage.clear(); 
+    return false;
+  }
+
+  $(".deleteUrl").click(function(){
+    $(this).prev('li').remove();
+    $(this).remove();
+    localStorage.setItem('list', edit.innerHTML);
+  });
+
+/*$("#signInButton").click(function(){
+	var po = document.createElement('script'); 
+  po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/client:plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  });  */
 });
