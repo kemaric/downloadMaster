@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     var inputfolder = document.createElement("input");
     $("#edit").append("<li style='display:inline'>" + x + " -> " + y + "</li>");
-    $("#edit").append('<input type="button" value="X" class="deleteUrl btn-danger">');
+    $("#edit").append('<input type="button" value="X" class="deleteUrl btn-danger" style="height:10px">');
   	localStorage.setItem('list', edit.innerHTML);
     $('input[type="text"]').prop("disabled", false);
     $('input[type="text"]').val('');
