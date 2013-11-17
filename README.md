@@ -1,3 +1,4 @@
 downloadMaster
 ==============
-This app will addfucntion to the chrome browser to sort the downloads the user makes.
+This extension will  allow the user in chrome to download files to their drop box account and sort the download to the correct
+folder where it belongs.
