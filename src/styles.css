@@ -1,0 +1,28 @@
+body {
+	height: 100%;
+	width: 400px;
+	margin: 0px;
+	padding: 0px;
+	/*background: #E74C3C;*/
+	background: #D8D8D8;
+	/*font-family: Verdana, Geneva, sans-serif;*/
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+#container {
+	position: relative;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 25px;
+	/*border: 5px solid black;*/
+}
+
+#dropbox {
+	right: 0;
+	position: absolute;
+	top: 90%;
+}
