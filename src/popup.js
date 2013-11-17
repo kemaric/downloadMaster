@@ -3,12 +3,7 @@ $(document).ready(function(){
   // alert('test');
   $("#addUrl").click(function(){
 
-    var x=document.forms["forms"]["url"].value;
-    var y=document.forms["forms"]["name"].value;
-    if (x==null || x=="" || y==null || y=="") {
-      alert("Must fill out website and folder name");
-      return false;
-    }
+    alert("TEST");
 
     var inputUrl = document.createElement("input");
     inputUrl.type = "text";

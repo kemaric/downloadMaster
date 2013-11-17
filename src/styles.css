@@ -1,9 +1,8 @@
 body {
 	height: 100%;
-	width: 400px;
+	width: 375px;
 	margin: 0px;
 	padding: 0px;
-	/*background: #E74C3C;*/
 	background: #D8D8D8;
 	/*font-family: Verdana, Geneva, sans-serif;*/
 }
@@ -22,7 +21,8 @@ h1 {
 }
 
 #dropbox {
-	right: 0;
+	right: 0px;
+	margin-right: 15px;
 	position: absolute;
 	top: 90%;
 }
