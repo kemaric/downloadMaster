@@ -1,4 +1,3 @@
 downloadMaster
 ==============
-This extension will  allow the user in chrome to download files to their drop box account and sort the download to the correct
-folder where it belongs.
+This Chrome extension allows users to download files to their Dropbox account and have them automatically sorted to the correct folder. Names of the folders are specified based on URL. 
