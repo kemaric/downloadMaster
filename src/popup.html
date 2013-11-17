@@ -14,12 +14,16 @@
     <div id="container">
         <h1>THIS IS UGLY</h1>
         <form name="input" action="html_form_action.asp" method="get" id="forms">
-          <input type="text" name="url" placeholder="url">
-          <input type="text" name="folder" placeholder="folder">
+          <input type="text" name="url" placeholder="url" id="urlBox">
+          <input type="text" name="folder" placeholder="folder" id="folderBox">
           <input type="button" value="Add" id="addUrl">
           
-          <input id="dropbox" type="submit" value="Sync with Dropbox">
+          <input id="signInButton" type="button" value="Sync with Drive">
         </form>
+		<section>
+    <ul id="edit" contenteditable="true">
+    </ul>
+  </section>
     </div>
     
   </body>
