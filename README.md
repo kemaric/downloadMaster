@@ -1,3 +1,3 @@
-downloadMaster
+SkyLoad
 ==============
-This Chrome extension allows users to download files to their Dropbox account and have them automatically sorted to the correct folder. Names of the folders are specified based on URL. 
+SkyLoad is a Chrome extension that allows users to quickly download files to their SkyDrive account using the right-click and have them sorted according to the url of the site. Each url added to the settings by the user is linked to a specific folder.
